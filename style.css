@@ -2,10 +2,13 @@ body{
     margin-top: -25px;
     margin-left: 0px;
     background-color: rgb(32, 32, 36);
+    height: auto;
 }
 
 h1{
+    font-size: 3em;
     color:white;
+    font-weight: bolder;
     font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -15,48 +18,113 @@ h2{
     font-family: "Source Sans Pro", sans-serif;
 }
 
+h3{
+    grid-row-start: 2;
+    font-size: 1.5em;
+    color:white;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
 p{
     color:white;
     font-family: "Source Sans Pro", sans-serif;
+}
+
+
+.p1{
+    font-size: 1.25em;
+}
+
+.pp{
+    padding-bottom: 0.40em;
+    padding-top: 1em;
+}
+
+.i1{
+    font-size: 4em;
+    color: white;
+    text-decoration: none;
+}
+
+.i1:hover{
+    color: silver;
+}
+
+.i2{
+    margin-left: 1em;
+    padding: 1em 1em 1em 1em;
+    border: solid 1px rgb(126, 126, 128);
+    border-radius: 250px;
+    color: rgb(126, 126, 128);
 }
 
 .video{
     overflow: hidden;
 }
 
+header{
+    height: auto;
+}
+
 .header{
-    background-image: url("img/giphy.gif");
-    height: 50vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: repeat(3, auto);
+    background-image: url("img/42050107df0a520def63df82c0e36a21.gif");
+    height: 90vh;
     width: 100vw;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-color: #42424f;
     margin-bottom: 2em;
+}
+
+.heade{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: center;
+    height: auto;
 }
 
 .d1{
     display: grid;
     justify-content: center;
     grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 60vh 60vh;
+    grid-template-rows: repeat(2, auto);
     background-color: rgb(32, 32, 36);
-    width: 100vw;
+    width: auto;
+    height: auto;
 }
 
 div > div{
     background-color: rgb(44, 44, 50);
     margin: 1em 1em 1em 1em;
+    border-radius: 8px;
 }
 
 footer{
-    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    margin-top: 1em;
     background-color: rgb(27, 27, 31);
-    padding: 3em 3em 2em 3em;
+    text-align: center;
+    height: auto;
+}
+
+.fut{
+    grid-column-start: 2;
     text-align: center;
 }
 
 .img{
     margin: 0px 0px 0px 0px;
+}
+
+#img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .divs{
@@ -76,9 +144,97 @@ footer{
 
 .boton{
     width: 100%;
-    height: 3em; 
+    height: 3em;
+    border-radius: 8px;
+    border: none;
+    color: white;
+}
+
+.boton#b1{
+    background-color: rgb(112, 199, 190);
+}
+
+.boton#b2{
+    background-color: rgb(127, 146, 207);
+}
+
+.boton#b3{
+    background-color: rgb(157, 126, 208);
+}
+
+.pm{
+    grid-row-start: 5;
+    color: rgb(126, 126, 128);
+    font-size: 0.75em;
+    margin-bottom: 4em;
+}
+
+.pn{
+    grid-row-start: 3;
+    font-size: 0.90em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.nav{
+    grid-row-start: 4;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 
+@media only screen and (max-width: 1260px){
 
+    .p1{
+        font-size: 16px;
+    }
+
+    .header{
+
+        width: auto;
+    }
+
+    .d1{
+        grid-template-columns: repeat(2, 65vh);
+        grid-template-rows: repeat(2, auto);
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+
+    .p1{
+        font-size: 16px;
+    }
+
+    .header{
+
+        width: auto;
+    }
+
+    .d1{
+        grid-template-columns: repeat(1, 70vh);
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    .p1{
+        font-size: 16px;
+    }
+
+    .header{
+
+        width: auto;
+    }
+
+    .d1{
+        grid-template-columns: repeat(1, 45vh);
+        width: auto;
+    }
+
+}
 
