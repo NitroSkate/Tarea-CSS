@@ -8,10 +8,11 @@ body{
 }
 
 h1{
-    font-size: 3em;
+    font-size: 5em;
     color:white;
-    font-weight: bolder;
+    font-weight: 500;
     font-family: "Passion One", cursive;
+    margin-bottom: -.25em;
 }
 
 h2{
@@ -34,12 +35,16 @@ p{
 
 
 .p1{
-    font-size: 1.25em;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #d9d9df
 }
 
 .pp{
-    padding-bottom: 0.40em;
-    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 0;
+    color: #a8a8aa;
+    font-size: 0.9em;
 }
 
 .i1{
@@ -49,23 +54,33 @@ p{
 }
 
 .i1:hover{
-    color: silver;
+    color: whitesmoke;
 }
 
 .i2{
-    margin-left: 1em;
-    padding: 1em 1em 1em 1em;
-    border: solid 1px rgb(126, 126, 128);
+    margin-left: 0.5em;
+    padding: .45em .55em .45em .55em;
+    border: solid 1px rgb(56, 56, 59);
     border-radius: 250px;
-    color: rgb(126, 126, 128);
+    color: rgb(56, 56, 59);
+    font-size: 1.5em;
+}
+
+.i2:hover{
+    color:white;
 }
 
 .fa-facebook-f{
-    margin-left: 1em;
-    padding: 1em 1.25em 1em 1.25em;
-    border: solid 1px rgb(126, 126, 128);
+    margin-left: 0.5em;
+    padding: .45em .75em .55em .75em;
+    border: solid 1px rgb(56, 56, 59);
     border-radius: 250px;
-    color: rgb(126, 126, 128);
+    color: rgb(56, 56, 59);
+    font-size: 1.5em;
+}
+
+.fa-facebook-f:hover{
+    color:white;
 }
 
 .video{
@@ -77,9 +92,9 @@ header{
 }
 
 .header{
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: repeat(3, auto);
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-image: url("img/42050107df0a520def63df82c0e36a21.gif");
     position: relative;
     /*height: 90vh;
@@ -88,20 +103,22 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #42424f;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .heade{
-    grid-column-start: 2;
-    grid-row-start: 2;
     text-align: center;
-    height: auto;
+    margin: 0 0 1.5em 0;
+    padding-left: 25em;
+    padding-right: 25em;
 }
 
 .d1{
     display: grid;
     justify-content: center;
-    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-columns: 25% 25% 25%;
     grid-template-rows: repeat(2, auto);
     background-color: rgb(32, 32, 36);
     width: auto;
@@ -131,6 +148,7 @@ footer{
 
 .img{
     margin: 0px 0px 0px 0px;
+
 }
 
 #img{
@@ -151,6 +169,7 @@ footer{
 
 .butt{
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .boton{
@@ -165,12 +184,24 @@ footer{
     background-color: rgb(112, 199, 190);
 }
 
+.boton#b1:hover{
+    background-color: #7ecdc5;
+}
+
 .boton#b2{
     background-color: rgb(127, 146, 207);
 }
 
+.boton#b2:hover{
+    background-color: #90a0d5;
+}
+
 .boton#b3{
     background-color: rgb(157, 126, 208);
+}
+
+.boton#b3:hover{
+    background-color: #aa8fd6;
 }
 
 .pm{
@@ -185,12 +216,33 @@ footer{
     font-size: 0.90em;
     margin-top: 1em;
     margin-bottom: 2em;
+    color: #b8b8b9
 }
 
 .nav{
     grid-row-start: 4;
     margin-top: 2em;
     margin-bottom: 3em;
+}
+
+.s1{
+    color: #b5b8bf;
+    text-decoration-style: dotted;
+}
+
+.s1:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.s2{
+    color: rgb(161, 161, 162);
+    text-decoration-style: dotted;
+}
+
+.s2:hover{
+    color:white;
+    text-decoration: none;
 }
 
 
@@ -206,7 +258,7 @@ footer{
     }
 
     .d1{
-        grid-template-columns: repeat(2, 60vh);
+        grid-template-columns: repeat(2, 45%);
         grid-template-rows: repeat(2, auto);
         width: auto;
     }
@@ -225,27 +277,10 @@ footer{
     }
 
     .d1{
-        grid-template-columns: repeat(1, 70vh);
+        grid-template-columns: repeat(1, 90%);
         width: auto;
     }
 
 }
 
-@media only screen and (max-width: 480px){
-
-    .p1{
-        font-size: 16px;
-    }
-
-    .header{
-
-        width: auto;
-    }
-
-    .d1{
-        grid-template-columns: repeat(1, 45vh);
-        width: auto;
-    }
-
-}
 
